@@ -18,14 +18,26 @@ body {
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+  .btn-green {
+    background-color: green;
+    color: white; 
   }
+  .btn_white_text  { 
+    @apply  border-white bg-white px-8 py-3 
+  }
+  /* styles.css or styles.scss */
+/* styles.css or styles.scss */
+.bg-green-90 {
+  background-color:gray;
+  height: 180px;
+  
+}
+
   .btn_green  { 
     @apply  border-green-50 bg-green-50 px-8 py-5 text-white
   }
   .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+    @apply  bg-gray-800 px-8 py-4 text-white transition-all hover:bg-black
   }
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
@@ -35,9 +47,9 @@ body {
     @apply mx-auto max-w-[1440px];
   }
 
-  /* .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
-  } */
+  .padding-container {
+    @apply px-6 lg:px-20 ;
+  }
 
   .flexCenter {
     @apply flex items-center justify-center;
@@ -121,12 +133,12 @@ body {
   }
 
   .bold-16 {
-    @apply text-[16px] font-[700];
+    @apply text-[14px] font-[700];
   }
 
   /* Hero */
   .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+    @apply absolute right-0 top-0 h-screen w-screen  bg-cover bg-center md:-right-28 xl:-top-60;
   }
 
   /* Camp */
@@ -154,4 +166,4 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-} 
+}
